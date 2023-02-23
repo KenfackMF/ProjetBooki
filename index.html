@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,15 +11,17 @@
 <body>
 <header> 
     <nav>
-          <img src="Images/Images-Booki/logo/Booki.png" alt="logo Booki" id="logo">
+                <a href="index.html"><img src="Images/Images-Booki/logo/Booki.png" alt="logo Booki" id="logo"></a>
 
-                <a href="#Hébergements" class="menu">Hébergements</a>
-                <a href="#Activités" class="menu">Activités</a>
+                <ul class="navigation">
+                    <li><a href="#Hébergements" class="menu">Hébergements</a></li>
+                    <li><a href="#Activites" class="menu">Activités</a></li>
+                </ul>
     </nav>
 </header>
 
 <main>
-<section1>
+<section>
     <div>
         <h1 class="titre"> Trouvez votre hébergement pour des vacances de rêve</h1>
         <p class="sousTitre">En plein centre-ville ou en pleine nature</p>
@@ -31,7 +33,7 @@
             <i class="fa-solid fa-location-dot icone"></i>    
     
             <form>
-                <input type="text" name="" placeholder="Marseille, France">
+                <input type="text" name="recherche" placeholder="Marseille, France">
                 <button id="recherche">Recherche</button>
             </form>
     
@@ -69,15 +71,15 @@
         </div>
 
 
-</section1>
+</section>
    
 
   
-<section2 class="grillePhoto">
+<section class="grillePhoto">
     
 
     <div class="grilleHebergement">
-        <a id="Hébergements"> <h2 class="titreHebergement">Hébergements à Marseille</h2></a>
+        <h2 class="titreHebergement" id="Hébergements">Hébergements à Marseille</h2>
 
 
         <div class="containerHebergement">
@@ -85,7 +87,7 @@
             <a href="#" class="cliquable"> 
                 <div class="cardHebergement">
 
-                            <img src="Images/Images-Booki/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Hôtel la Canebière"  class="heber1">
+                            <img src="Images/Images-Booki/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Hôtel la Canebière"  class="photoHebergement">
 
                             <h3 class="nomHotel">Hôtel la Canebière</h3>
                             <p class="prixChambre">Nuit à partir de 25€</p>
@@ -104,7 +106,7 @@
             <a href="#" class="cliquable"> 
                 <div class="cardHebergement">
 
-                            <img src="Images/Images-Booki/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du Port"  class="heber1">
+                            <img src="Images/Images-Booki/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du Port"  class="photoHebergement">
 
                             <h3 class="nomHotel">Hôtel du Port</h3>
                             <p class="prixChambre">Nuit à partir de 52€</p>
@@ -123,7 +125,7 @@
             <a href="#" class="cliquable"> 
                 <div class="cardHebergement">
 
-                            <img src="Images/Images-Booki/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel les Mouettes"  class="heber1">
+                            <img src="Images/Images-Booki/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel les Mouettes"  class="photoHebergement">
 
                             <h3 class="nomHotel">Hôtel Les Mouettes</h3>
                             <p class="prixChambre">Nuit à partir de 76€</p>
@@ -142,7 +144,7 @@
             <a href="#" class="cliquable"> 
                 <div class="cardHebergement">
 
-                            <img src="Images/Images-Booki/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtelcde la Mer"  class="heber1">
+                            <img src="Images/Images-Booki/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtelcde la Mer"  class="photoHebergement">
 
                             <h3 class="nomHotel">Hôtel de la Mer</h3>
                             <p class="prixChambre">Nuit à partir de 46€</p>
@@ -161,7 +163,7 @@
             <a href="#" class="cliquable"> 
                 <div class="cardHebergement">
 
-                            <img src="Images/Images-Booki/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge le Panier"  class="heber1">
+                            <img src="Images/Images-Booki/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge le Panier"  class="photoHebergement">
 
                             <h3 class="nomHotel">Auberge le panier</h3>
                             <p class="prixChambre">Nuit à partir de 23€</p>
@@ -180,7 +182,7 @@
             <a href="#" class="cliquable"> 
                 <div class="cardHebergement">
 
-                            <img src="Images/Images-Booki/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel la Canebière"  class="heber1">
+                            <img src="Images/Images-Booki/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel la Canebière"  class="photoHebergement">
 
                             <h3 class="nomHotel">Hôtel Chez Amina</h3>
                             <p class="prixChambre">Nuit à partir de 96€</p>
@@ -276,81 +278,80 @@
 
     </div>
 
-</section2>
+</section>
 
 
-<section3 class="lesActivités">
-    <div class="grilleActivite">
+<section>
+    <div class="grilleActivite" >
         
-            <a id="Activités"> <h2 class="titreActivite"> Activités à Marseille</h2></a>
+            <h2 class="titreActivite" id="#Activités"> Activités à Marseille </h2>
            
         <div class="contenairCard">
-            <div class="cardActivite">
-                <div class="contenairImageActivite1">
-
-                </div>
-
-                <div class="nomActivite">
-                    <h4>Vieux-Port</h4>
-                </div>
-            </div>
         
-
-
             <div class="cardActivite">
-                <div class="contenairImageActivite2">
+                    <a href="#">
 
-                </div>
-                <div class="nomActivite">
-                    <h4>Fort de Pomègues</h4>
-                </div>
+                        <img src="Images/Images-Booki/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port" class="imageActivites">
+            
+                        <h4 class="nomActivite">Vieux-Port</h4>
+                    </a>
             </div>
 
 
             <div class="cardActivite">
-                <div class="contenairImageActivite3">
-                </div>
-                <div class="nomActivite">
-                    <h4>Parc National des Calanques</h4>
-                </div>
+                        <a href="#">
+                            <img src="Images/Images-Booki/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomèques" class="imageActivites">
+                            <h4 class="nomActivite">Fort de Pomègues</h4>
+                        </a>
             </div>
 
 
             <div class="cardActivite">
-                <div class="contenairImageActivite4">
-                 
-                </div>
-                <div class="nomActivite">
-                    <h4>Notre Notre-Dame-de-la-Garde</h4>
-                </div>
+                        <a href="#">
+                            <img src="Images/Images-Booki/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Park National des Calanques" class="imageActivites">
+                            <h4 class="nomActivite">Parc National des Calanques</h4>
+                        </a>
+            </div>
+
+
+            <div class="cardActivite">
+                        <a href="#">
+                            <img src="Images/Images-Booki/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde" class="imageActivites">
+                            <h4 class="nomActivite">Notre Notre-Dame-de-la-Garde</h4>
+                        </a>
             </div>
         </div>
 
     </div>
-</section3>
+</section>
 </main>  
 
 <footer id="footer">
     <div class="contenairFooter">
     
         <div class="propos"> 
-            <h3 class="titreFooter">A propos</h3>
-            <p class="texteFooter">Fonctionnement du site <br>
-            Condittions générales <br>
-        Données et confidentialité</p>
+            <a href="#"> <h3 class="titreFooter">A propos</h3></a>
+            <ul>
+                <a href="#"><li>Fonctionnement du site</li></a>
+                <a href=""><li>Condittions générales</li></a>
+                <a href=""><li>Données et confidentialité</li></a>
+            </ul>
         </div>
     
         <div class="nosHebergements">
-            <h3 class="titreFooter">Nos hébergements</h3>
-            <p class="texteFooter">Charte qualité <br>
-            Proposer votre hôtel</p>
+            <a href=""><h3 class="titreFooter">Nos hébergements</h3></a>
+            <ul>
+                <a href=""><li>Charte qualité</li></a>
+                <a href=""><li>Proposer votre hôtel</li></a>
+            </ul>
         </div>
     
         <div class="assistance">
-            <h3 class="titreFooter">Assistance</h3>
-            <p class="texteFooter"> Centre d'aide <br>
-                Nous contacter
-            </p>
+            <a href=""><h3 class="titreFooter">Assistance</h3></a>
+                <ul>
+                    <a href=""><li>Centre d'aide</li></a>
+                    <a href=""><li>Nous contacter</li></a>
+                </ul>
         </div>
     
     </div>
