@@ -513,6 +513,9 @@ margin-right: 1rem;
     color: black;
 }
 
+.contenairFooter ul li{
+    list-style: none;
+}
 
 
 @media screen and (max-width:992px) {
