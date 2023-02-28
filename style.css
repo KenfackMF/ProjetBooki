@@ -4,9 +4,6 @@
 body{
     margin: 0;
     padding: 0;
-    width: 87.5vw;
-    margin: auto;
-
 }
 
 *{
@@ -15,9 +12,25 @@ body{
 
 }
 
+header{
+    max-width: 1400px;
+    margin: auto;
+}
+
+main{
+    max-width: 1400px;
+    margin: auto;
+}
+
+footer{
+    max-width: 1400px;
+    margin: auto;
+}
+
 
 a{
     text-decoration: none;
+    color: black;
 }
 
 /* header*/
@@ -25,75 +38,40 @@ a{
 
 nav{
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
-    margin-top: 1rem;
+    justify-content: flex-end;
+    flex-wrap: wrap;
 }
 
-nav ul li a{
-    text-decoration: none;
-    color: black;
-    padding: 1rem;
-    font-size: 1.2rem;
+nav a{
+    padding: 2rem;
 }
-
-nav ul li{
-    list-style: none;
-}
-
-.menu:hover{
-    border-top: 3px solid #0065FC;
-    color: #0065FC;
-}
-
 
 #logo{
     width: 100px;
+    margin-right: auto;
+    padding: 1rem 0;
+}
+
+nav a:hover{
+    border-top: 3px solid #0065FC;
+    color: #0065FC;
 }
 
 #logo:hover{
     color: #DEEBFF;
     opacity: 80%;
+    cursor: pointer;
 }
 
-
-
-.navigation{
+.menu{
     display: flex;
-    padding: 2rem;
-    margin: 0;
-}
-
-
-
-
-@media screen and (max-width:768px){
-    .navigation{
-        flex-basis: 100%;   
-        justify-content: center;   
-        margin-top: 2rem;
-        border-bottom: 3px solid #d9d9d9;
-
-    }
-
-    .menu{
-        padding: 2rem 6rem ;
-
-
-    }
-   nav{
-    justify-content: center;
-   }
-
-   .menu:hover{
     border-top: 3px solid transparent;
-    border-bottom: 3px solid #0065FC;
-    color: #0065FC;
-}
 }
 
-
+.menu a{
+    font-size: 1rem;
+}
 
 
 
@@ -148,16 +126,6 @@ button:hover{
 
 .fa-magnifying-glass{
     display: none;
-}
-
-@media screen and (max-width:768px) {
-    .iconeRecherche{
-        display: none;
-    }
-    .fa-magnifying-glass{
-        display: inline;
-    }
-
 }
 
 
@@ -259,7 +227,7 @@ button:hover{
 .cardHebergement{
     display: flex;
     flex-direction: column;
-    flex-basis: calc(33%-1rem);
+    flex-basis: 30.5%;
     background-color: white;
     border-radius:1rem;
     padding: 0.3rem;
@@ -273,8 +241,8 @@ button:hover{
 }
 
 .photoHebergement{
-    width: 15rem;
-    height: 7rem;
+    width: 100%;
+    height: 10rem;
     border-radius: 1rem 1rem 0 0;
     object-fit: cover;
 }
@@ -306,50 +274,6 @@ button:hover{
     margin-left: 1rem;
 }
 
-@media screen and (max-width:768px) {
-  .grillePhoto{
-    flex-direction: column;
-  }
-  .grillePopulaire{
-    order: -1;
-  }
-  .filtre{
-    flex-direction: column;
-  }
-  .contenairPopulaire{
-    flex-direction: column;
-  }
-
-  }
-
-
-  @media screen and (max-width:992px) {
-    .grillePhoto{
-      flex-direction: column;
-    }
-
-  
-    .cardPopulaire img{
-        width: 10rem;
-    }
-    }
-
-    @media screen and (max-width:390px) {
-        .grillePhoto{
-          flex-direction: column;
-        }
-        .grillePopulaire{
-          order: -1;
-        }
-        .filtre{
-          flex-direction: column;
-        }
-        .contenairPopulaire{
-            display: flex;
-          flex-direction: column;
-        }
-      
-        }
 
 
 /*Most popular hotel in marseille grid*/
@@ -367,14 +291,14 @@ button:hover{
 display: flex;
 align-items: center;
 justify-content: space-between;
-margin-right: 1rem;
+margin: 0 1rem;
 }
 
 .fa-chart-line {
     display: flex;
     align-content: flex-end;
     color: #0065FC;
-    font-size: 16px;
+    font-size: 1.2rem;
 }
 
 .titrePlus{
@@ -386,18 +310,15 @@ margin-right: 1rem;
     flex-direction: column;
     gap: 1rem;
     padding: 1rem;
-
 }
 
-.cardPopulaire{
+.cliquableP{
     display: flex;
-    flex-direction: row;
     background-color: white;
     border-radius: 1rem;
     padding: 0.3rem;
     box-shadow: 5px 5px 5px #a7a6a6;
-    min-width: 17rem;
-
+    flex-basis: 100%;
 }
 
 .cardPopulaire:hover{
@@ -406,10 +327,14 @@ margin-right: 1rem;
 }
 
 .cardPopulaire img{
-    width: 8rem;
-    height: 10rem;
+   width: 100%;
+    height: 11rem;
     border-radius:1rem 0 0 1rem;
     object-fit: cover; 
+}
+
+.contenairImagePop{
+    width: 30%;
 }
 
 .textePopulaire{
@@ -422,43 +347,6 @@ margin-right: 1rem;
     margin-bottom: auto;
 }
 
-
-
-@media screen and (max-width:768px) {
-    .grillePopulaire{
-        flex-direction: column;
-}
-    .contenairPopulaire{
-        flex-wrap: wrap;
-    }
-}
-
-
-@media screen and (max-width:992px) {
-    .grillePopulaire{
-        flex-direction: column;
-    }
-
-    .titrePopulaire{
-        flex-basis: 100%;
-    }
-    .contenairPopulaire{
-        flex-direction: row;
-
-    }
-
-    .cardPopulaire{
-        width: 15rem;
-    }
-
-    .contenairPopulaire img{
-        width:6rem;
-    }
-    .textePopulaire .prixChambre{
-        font-size: .8rem;
-    }
-
-}
 
 
 
@@ -518,29 +406,6 @@ margin-right: 1rem;
 }
 
 
-@media screen and (max-width:992px) {
-
-.imageActivites{
-    height: 15rem;
-}
-}
-
-
-@media screen and (max-width:768px) {
-
-    .cardActivite{
-        width: 100%;
-    }
-
-    .imageActivites{
-        object-fit: cover;
-    }
-
-    .contenairCard{
-        flex-direction: column;
-    }
-    }
-
 /*footer*/
 
 #footer{
@@ -581,7 +446,128 @@ footer ul{
 
 }
 
-@media screen and (max-width:768px) {
+
+
+
+  
+@media screen and (max-width:992px) {
+      .grillePhoto{
+        flex-direction: column;
+      }
+
+      .grillePopulaire{
+        flex-direction: column;
+    }
+
+    .titrePopulaire{
+        flex-basis: 100%;
+    }
+
+    .contenairPopulaire{
+        flex-direction: row;
+
+    }
+
+    .cardPopulaire{
+        display: flex;
+        flex-direction: row;
+        flex-basis: 100%;
+    }
+
+    .contenairPopulaire img{
+       
+    }
+
+    .textePopulaire .prixChambre{
+        font-size: .8rem;
+    }
+
+    .imageActivites{
+        height: 15rem;
+    }
+
+}
+  
+    
+    
+    @media screen and (max-width:768px) {
+
+        .menu{
+            flex-basis: 100%;
+            margin-top: 1rem;
+            justify-content: center;
+    
+        }
+    
+        .menu a{
+            flex-basis: 50%;
+            text-align: center;
+            border-bottom: 3px solid #d9d9d9;
+    
+        }
+    
+        #logo{
+            margin: auto;
+        }
+    
+       .menu a:hover{
+        border-top: 3px solid transparent;
+        border-bottom: 3px solid #0065FC;
+        color: #0065FC;
+    }
+
+    .iconeRecherche{
+        display: none;
+    }
+
+    .fa-magnifying-glass{
+        display: inline;
+    }
+
+    .filtre{
+        flex-direction: column;
+      }
+
+
+    .grillePhoto{
+        flex-direction: column;
+      }
+
+      .grillePopulaire{
+        order: -1;
+      }
+
+      .containerHebergement{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+      .grillePopulaire{
+        flex-direction: column;
+    }
+
+    .contenairPopulaire{
+        flex-wrap: wrap;
+    }
+
+
+    .contenairPopulaire{
+        flex-direction: column;
+      }
+
+
+    .cardActivite{
+        width: 90%;
+        margin: auto;
+    }
+
+    .imageActivites{
+        object-fit: cover;
+    }
+
+    .contenairCard{
+        flex-direction: column;
+    }
 
     .contenairFooter{
         flex-direction: column;
@@ -593,4 +579,26 @@ footer ul{
         padding: 2rem;
     }
 
-    }
+}
+    
+
+
+
+@media screen and (max-width:390px) {
+        .grillePhoto{
+          flex-direction: column;
+        }
+        .grillePopulaire{
+          order: -1;
+        }
+
+
+        .filtre{
+          flex-direction: column;
+        }
+        .contenairPopulaire{
+            display: flex;
+          flex-direction: column;
+        }
+      
+        }
