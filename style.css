@@ -380,7 +380,7 @@ margin: 0 1rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 4%;
     justify-content: space-around;
     margin-top: 2rem;
 }
@@ -590,9 +590,8 @@ footer ul{
     .imageActivites{
         object-fit: cover;
     }
-
     .contenairCard{
-        flex-direction: column;
+        row-gap: 2rem;
     }
 
     .contenairFooter{
@@ -614,6 +613,8 @@ footer ul{
         .grillePhoto{
           flex-direction: column;
         }
+
+
         .grillePopulaire{
           order: -1;
         }
@@ -624,7 +625,7 @@ footer ul{
         }
         .contenairPopulaire{
             display: flex;
-          flex-direction: column;
+            flex-direction: column;
         }
       
         }
