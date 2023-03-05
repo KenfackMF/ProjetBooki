@@ -26,7 +26,6 @@ footer {
   max-width: 1400px;
   margin: auto;
   padding: 0 30px;
-  background-color: #d9d9d9;
 }
 
 a {
@@ -408,7 +407,11 @@ button:hover {
   height: auto;
   margin-top: 3rem;
 }
-
+.fondFooter{
+  width: 100%;
+  height: auto;
+  background-color: #d9d9d9;
+}
 .contenairFooter {
   display: flex;
   flex-direction: row;
@@ -561,6 +564,12 @@ footer ul {
   .contenairFooter {
     flex-direction: column;
     gap: 2rem;
+    padding: 0 3rem;
+  }
+
+Footer{
+    margin: 0;
+    padding: 0;
   }
   
 }
