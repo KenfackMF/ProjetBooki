@@ -574,20 +574,4 @@ Footer{
   
 }
 
-@media screen and (max-width: 390px) {
-  .grillePhoto {
-    flex-direction: column;
-  }
 
-  .grillePopulaire {
-    order: -1;
-  }
-
-  .filtre {
-    flex-direction: column;
-  }
-  .contenairPopulaire {
-    display: flex;
-    flex-direction: column;
-  }
-}
